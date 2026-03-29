@@ -251,7 +251,7 @@ SIMPLE_MORPH(rpar_gt,           SFT, &kp RPAR,      &kp GT)
     &none          &none          &none          &none          &none              &none          &none          &none          &none          &none
     &none          &none          &none          &none          &none              &kp C_PREV     &kp C_VOL_DN   &kp C_VOL_UP   &kp C_NEXT     &kp C_MUTE
     &none          &none          &none          &none          &none              &out OUT_TOG   &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3
-                                  &trans         &none          &none              &kp C_STOP     &kp C_PP       &tog GAME
+                                  &trans         &none          &none              &kp C_STOP     &kp C_PP       &none
             >;
         };
 
@@ -288,15 +288,5 @@ SIMPLE_MORPH(rpar_gt,           SFT, &kp RPAR,      &kp GT)
             >;
         };
 
-        gaming {
-            display-name = "GAME";
-            bindings = <
-// ╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮   ╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮
-    &kp TAB        &kp Q          &kp W          &kp E          &kp R              &kp T          &kp Y          &kp U          &kp I          &kp O
-    &kp LSHFT      &kp A          &kp S          &kp D          &kp F              &kp G          &kp H          &kp J          &kp K          &kp L
-    &kp LCTRL      &kp Z          &kp X          &kp C          &kp V              &kp B          &kp N          &kp M          &kp COMMA      &kp DOT
-                                  &kp ESC        &kp LALT       &kp SPACE          &kp BSPC       &kp ENTER      &tog BASE
-            >;
-        };
     };
 };
