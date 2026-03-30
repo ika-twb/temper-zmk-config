@@ -5,7 +5,7 @@
  * Temper keymap — ported from Eyelash Sofle (urob)
  */
 
-#define ZMK_POINTING_DEFAULT_MOVE_VAL 1200
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 2400
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 25
 
 #include <behaviors.dtsi>
