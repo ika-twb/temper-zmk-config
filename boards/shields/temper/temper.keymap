@@ -215,7 +215,7 @@ SIMPLE_MORPH(rpar_gt,           SFT, &kp RPAR,      &kp GT)
 // ╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮   ╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮
     &none          &none          &none          &none          &none              &kp K_REDO     NAV_BSPC       NAV_DEL        &kp K_CUT      &kp K_UNDO
     &kp LG(W)      &kp LC(UP)     &kp LC(LEFT)   &kp LC(RIGHT)  &none              NAV_LEFT       NAV_DOWN       NAV_UP         NAV_RIGHT      &kp CAPS
-    &kp LSHIFT     &none          &none          &none          &none              &kp HOME       &kp PG_DN      &kp PG_UP      &kp END        &kp INSERT
+    &kp LSHIFT     &none          &kp LG(LS(LBRC)) &kp LG(LS(RBRC))  &none         &kp HOME       &kp PG_DN      &kp PG_UP      &kp END        &kp INSERT
                                   &none          &trans         &none              &kp CAPS      &kp BSPC       &kp DEL
             >;
         };
