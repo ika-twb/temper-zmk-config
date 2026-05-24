@@ -9,6 +9,7 @@
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 25
 
 #include <behaviors.dtsi>
+#include <behaviors/num_word.dtsi>
 #include <zmk-helpers/helper.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
@@ -204,7 +205,7 @@ SIMPLE_MORPH(rpar_gt,           SFT, &kp RPAR,      &kp GT)
     &hml LCTRL A   &hml LALT S    &hml LCMD D    &hml LSHFT F   &kp G              &kp H          &hmr LSHFT J   &hmr LCMD K    &hmr LALT L    &hmr LCTRL SQT
     &kp Z          &kp X          &kp C          &kp V          &kp B              &kp N          &kp M          &comma_morph   &dot_morph     &qexcl
 // ╰──────────────┴──────────────┼──────────────┼──────────────┼──────────────╯   ╰──────────────┼──────────────┼──────────────┼──────────────┴──────────────╯
-                                  &lt MEDIA ESC  &lt NAV TAB    &lt MOUSE SPACE      &lt SYM BSPC   &lt NUM RET    &lt FUNC DEL
+                                  &kp ESC        &kp TAB        &kp SPACE            &kp BSPC       &kp RET        &kp DEL
 //                               ╰──────────────┴──────────────┴──────────────╯   ╰──────────────┴──────────────┴──────────────╯
             >;
         };
@@ -275,5 +276,5 @@ SIMPLE_MORPH(rpar_gt,           SFT, &kp RPAR,      &kp GT)
             >;
         };
 
-    };
+};
 };
