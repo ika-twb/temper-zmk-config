@@ -23,6 +23,9 @@ manifest:
     - name: zmk-helpers
       remote: urob
       path: modules/zmk/helpers
+    - name: zmk-tri-state
+      remote: urob
+      path: modules/zmk/tri-state
 
   self:
     path: config
