@@ -73,3 +73,7 @@ ZMK_COMBO(dsk_prev, &kp LC(LEFT),       RM0 RM1,  NAV,         COMBO_TERM_FAST, 
 ZMK_COMBO(dsk_next, &kp LC(RIGHT),      RM1 RM2,  NAV,         COMBO_TERM_FAST, COMBO_IDLE_FAST)
 ZMK_COMBO(tab_prev, &kp LG(LS(LBRC)),  RT0 RT1,  NAV,         COMBO_TERM_FAST, COMBO_IDLE_FAST)
 ZMK_COMBO(tab_next, &kp LG(LS(RBRC)),  RT3 RT4,  NAV,         COMBO_TERM_FAST, COMBO_IDLE_FAST)
+
+/* System power combos (four-key, require both hands to prevent accidental trigger) */
+ZMK_COMBO(soft_off_l, &soft_off,   LT4 RT4 LB4 RB4,  DEF, 100, COMBO_IDLE_FAST)
+ZMK_COMBO(bootldr,    &bootloader, LT0 RT0 LB0 RB0,  DEF, 100, COMBO_IDLE_FAST)
