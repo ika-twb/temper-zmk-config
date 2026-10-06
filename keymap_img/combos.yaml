@@ -1,8 +1,8 @@
 layers:
   COMBOS:
-    - ['', '', '', '', '', '', '', '', '', '']
-    - ['', '', '', '', '', '', '', '', '', '']
-    - ['', '', '', '', '', '', '', '', '', '']
+    - [Q, W, E, R, T, Y, U, I, O, P]
+    - [A, S, D, F, G, H, J, K, L, "'"]
+    - [Z, X, C, V, B, N, M, ',', '.', '?']
     - ['', '', '', '', '', '']
 
 combos:
@@ -38,6 +38,5 @@ combos:
   - {p: [17, 27], k: '=', l: [COMBOS]}
   - {p: [18, 28], k: '|', l: [COMBOS]}
 
-  # Four-key safety chords.
-  - {p: [0, 9, 20, 29], k: 'OFF', l: [COMBOS], a: left,  o: -0.45}
-  - {p: [4, 5, 24, 25], k: BOOT, l: [COMBOS], a: right, o: 0.45}
+  # Four-key safety chords are marked directly on their four trigger keys:
+  # OFF uses the four outer corners; BOOT uses the four inner corners.

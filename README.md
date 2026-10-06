@@ -25,4 +25,6 @@ and Escape. Double-tap `G` emits a literal `G`. Press `G`, then the
 rightmost `Esc` thumb, to leave gaming mode and return to whichever macOS or
 Windows profile was active.
 
+Four-key safety chords: `Q+P+Z+?` powers off; `T+Y+B+N` enters the bootloader.
+
 ![Temper Keymap](keymap_img/temper.svg)
