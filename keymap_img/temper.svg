@@ -61,9 +61,8 @@ text.shifted {
 }
 
 /* Keep directional arrows as symbols, but make them easier to scan. */
-text.arrow {
+text.arrow.tap {
     font-size: 15px;
-    font-weight: bold;
 }
 
 /* styling for hold/shifted label text in combo box */
@@ -221,8 +220,8 @@ path {
 <g transform="translate(254, 236) rotate(15.0)" class="key keypos-31">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
 <text x="0" y="0" class="key tap">TAB</text>
-<a href="#MAC-NAV">
-<text x="0" y="24" class="key hold layer-activator">MAC NAV</text>
+<a href="#MAC_NAV">
+<text x="0" y="24" class="key hold layer-activator">MAC_NAV</text>
 </a></g>
 <g transform="translate(321, 246) rotate(30.0)" class="key keypos-32">
 <rect rx="6" ry="6" x="-26" y="-42" width="52" height="85" class="key"/>
@@ -393,8 +392,8 @@ path {
 <g transform="translate(254, 236) rotate(15.0)" class="key keypos-31">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
 <text x="0" y="0" class="key tap">TAB</text>
-<a href="#WIN-NAV">
-<text x="0" y="24" class="key hold layer-activator">WIN NAV</text>
+<a href="#WIN_NAV">
+<text x="0" y="24" class="key hold layer-activator">WIN_NAV</text>
 </a></g>
 <g transform="translate(321, 246) rotate(30.0)" class="key keypos-32">
 <rect rx="6" ry="6" x="-26" y="-42" width="52" height="85" class="key"/>
@@ -1104,8 +1103,8 @@ path {
 </g>
 </g>
 </g>
-<g transform="translate(30, 2481)" class="layer-MAC NAV">
-<text x="0" y="28" class="label" id="MAC-NAV">MAC NAV:</text>
+<g transform="translate(30, 2481)" class="layer-MAC_NAV">
+<text x="0" y="28" class="label" id="MAC_NAV">MAC_NAV:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(30, 87)" class="key keypos-0">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
@@ -1255,8 +1254,8 @@ path {
 </g>
 </g>
 </g>
-<g transform="translate(30, 2835)" class="layer-WIN NAV">
-<text x="0" y="28" class="label" id="WIN-NAV">WIN NAV:</text>
+<g transform="translate(30, 2835)" class="layer-WIN_NAV">
+<text x="0" y="28" class="label" id="WIN_NAV">WIN_NAV:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(30, 87)" class="key keypos-0">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>

@@ -78,9 +78,8 @@ draw_config:
     }
 
     /* Keep directional arrows as symbols, but make them easier to scan. */
-    text.arrow {
+    text.arrow.tap {
         font-size: 15px;
-        font-weight: bold;
     }
 
     /* styling for hold/shifted label text in combo box */

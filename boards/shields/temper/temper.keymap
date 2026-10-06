@@ -283,7 +283,7 @@ SIMPLE_MORPH(rpar_gt,           SFT, &kp RPAR,      &kp GT)
         };
 
         mac_navigation {
-            display-name = "MAC NAV";
+            display-name = "MAC_NAV";
             bindings = <
 // ╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮   ╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮
     &none          &none          &kp LG(LS(LBRC)) &kp LG(LS(RBRC)) &none          &kp LA(LEFT)   &kp LC(DOWN)  &kp LC(UP)    &kp LA(RIGHT)  &none
@@ -294,7 +294,7 @@ SIMPLE_MORPH(rpar_gt,           SFT, &kp RPAR,      &kp GT)
         };
 
         windows_navigation {
-            display-name = "WIN NAV";
+            display-name = "WIN_NAV";
             bindings = <
 // ╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮   ╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮
     &none          &none          &kp LC(LS(LBRC)) &kp LC(LS(RBRC)) &none          &kp LC(LEFT)   &kp LC(DOWN)  &kp LC(UP)    &kp LC(RIGHT)  &none
