@@ -77,11 +77,6 @@ draw_config:
         dominant-baseline: hanging;
     }
 
-    /* Keep directional arrows as symbols, but make them easier to scan. */
-    text.arrow.tap {
-        font-size: 15px;
-    }
-
     /* styling for hold/shifted label text in combo box */
     text.combo.hold, text.combo.shifted {
         font-size: 7px;
@@ -169,14 +164,14 @@ parse_config:
     '&bootloader': 'BOOT'
     '&sys_reset': 'RESET'
     '&bt BT_CLR': 'BT CLR'
-    '&mmv MOVE_LEFT': {t: '←', h: 'pointer', type: arrow}
-    '&mmv MOVE_DOWN': {t: '↓', h: 'pointer', type: arrow}
-    '&mmv MOVE_UP': {t: '↑', h: 'pointer', type: arrow}
-    '&mmv MOVE_RIGHT': {t: '→', h: 'pointer', type: arrow}
-    '&msc SCRL_LEFT': {t: '←', h: 'scroll', type: arrow}
-    '&msc SCRL_DOWN': {t: '↓', h: 'scroll', type: arrow}
-    '&msc SCRL_UP': {t: '↑', h: 'scroll', type: arrow}
-    '&msc SCRL_RIGHT': {t: '→', h: 'scroll', type: arrow}
+    '&mmv MOVE_LEFT': {t: '←', h: 'pointer'}
+    '&mmv MOVE_DOWN': {t: '↓', h: 'pointer'}
+    '&mmv MOVE_UP': {t: '↑', h: 'pointer'}
+    '&mmv MOVE_RIGHT': {t: '→', h: 'pointer'}
+    '&msc SCRL_LEFT': {t: '←', h: 'scroll'}
+    '&msc SCRL_DOWN': {t: '↓', h: 'scroll'}
+    '&msc SCRL_UP': {t: '↑', h: 'scroll'}
+    '&msc SCRL_RIGHT': {t: '→', h: 'scroll'}
     '&mkp LCLK': {t: 'L', h: 'click'}
     '&mkp RCLK': {t: 'R', h: 'click'}
     '&mkp MCLK': {t: 'M', h: 'click'}
@@ -300,10 +295,10 @@ parse_config:
     RIGHT_ALT: RALT
     RIGHT_GUI: RGUI
     RIGHT_SHFT: RSHFT
-    LEFT: {t: '←', type: arrow}
-    RIGHT: {t: '→', type: arrow}
-    UP: {t: '↑', type: arrow}
-    DOWN: {t: '↓', type: arrow}
+    LEFT: '←'
+    RIGHT: '→'
+    UP: '↑'
+    DOWN: '↓'
     TAB: TAB
     ESC: ESC
     RETURN: RET
