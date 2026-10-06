@@ -63,20 +63,20 @@ layers:
     - ''
     - ''
     - ''
-    - {t: ←, h: pointer, type: arrow}
-    - {t: ↓, h: pointer, type: arrow}
-    - {t: ↑, h: pointer, type: arrow}
-    - {t: →, h: pointer, type: arrow}
+    - {t: ⬅, h: pointer}
+    - {t: ⬇, h: pointer}
+    - {t: ⬆, h: pointer}
+    - {t: ➡, h: pointer}
     - ''
   - - ''
     - ''
     - ''
     - ''
     - ''
-    - {t: ←, h: scroll, type: arrow}
-    - {t: ↓, h: scroll, type: arrow}
-    - {t: ↑, h: scroll, type: arrow}
-    - {t: →, h: scroll, type: arrow}
+    - {t: ⬅, h: scroll}
+    - {t: ⬇, h: scroll}
+    - {t: ⬆, h: scroll}
+    - {t: ➡, h: scroll}
     - ''
   - - ''
     - ''
@@ -181,26 +181,8 @@ layers:
     - ''
     - {type: held}
   MAC_NAV:
-  - - ''
-    - ''
-    - Gui+Sft+{
-    - Gui+Sft+}
-    - ''
-    - ↞
-    - {t: Ctl+↓, type: arrow}
-    - {t: Ctl+↑, type: arrow}
-    - ↠
-    - ''
-  - - ⌘W
-    - Gui+TAB
-    - {t: Ctl+←, type: arrow}
-    - {t: Ctl+→, type: arrow}
-    - ''
-    - {t: ←, type: arrow}
-    - {t: ↓, type: arrow}
-    - {t: ↑, type: arrow}
-    - {t: →, type: arrow}
-    - CAPS
+  - ['', '', 'Gui+Sft+{', 'Gui+Sft+}', '', ↞, Ctl+⬇, Ctl+⬆, ↠, '']
+  - [⌘W, Gui+TAB, Ctl+⬅, Ctl+➡, '', ⬅, ⬇, ⬆, ➡, CAPS]
   - [LSHIFT, '', 'Gui+Sft+{', 'Gui+Sft+}', '', HOME, PG DN, PG UP, END, INSERT]
   - - ''
     - {type: held}
@@ -209,26 +191,8 @@ layers:
     - BSPC
     - DEL
   WIN_NAV:
-  - - ''
-    - ''
-    - Ctl+Sft+{
-    - Ctl+Sft+}
-    - ''
-    - {t: Ctl+←, type: arrow}
-    - {t: Ctl+↓, type: arrow}
-    - {t: Ctl+↑, type: arrow}
-    - {t: Ctl+→, type: arrow}
-    - ''
-  - - Alt+F4
-    - Alt+TAB
-    - {t: Ctl+Gui+←, type: arrow}
-    - {t: Ctl+Gui+→, type: arrow}
-    - ''
-    - {t: ←, type: arrow}
-    - {t: ↓, type: arrow}
-    - {t: ↑, type: arrow}
-    - {t: →, type: arrow}
-    - CAPS
+  - ['', '', 'Ctl+Sft+{', 'Ctl+Sft+}', '', Ctl+⬅, Ctl+⬇, Ctl+⬆, Ctl+➡, '']
+  - [Alt+F4, Alt+TAB, Ctl+Gui+⬅, Ctl+Gui+➡, '', ⬅, ⬇, ⬆, ➡, CAPS]
   - [LSHIFT, '', 'Gui+Sft+{', 'Gui+Sft+}', '', HOME, PG DN, PG UP, END, INSERT]
   - - ''
     - {type: held}
@@ -281,10 +245,10 @@ layers:
     - TAB
     - F11
     - F12
-    - {t: ←, type: arrow}
-    - {t: ↓, type: arrow}
-    - {t: ↑, type: arrow}
-    - {t: →, type: arrow}
+    - ⬅
+    - ⬇
+    - ⬆
+    - ➡
     - {t: '`', s: '~'}
   - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
