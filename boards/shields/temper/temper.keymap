@@ -80,6 +80,8 @@
 #define FUNC      6
 #define MAC_NAV   7
 #define WIN_NAV   8
+#define GAME      9
+#define GAME_PLUS 10
 
 #define QUICK_TAP_MS 175
 
@@ -212,7 +214,7 @@ SIMPLE_MORPH(rpar_gt,           SFT, &kp RPAR,      &kp GT)
             bindings = <
 // ╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮   ╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮
     &bootloader    &to WIN        &none          &sys_reset     &none              &none          &none          &none          &none          &none
-    &to MAC        &none          &none          &none          &none              &kp C_PREV     &kp C_VOL_DN   &kp C_VOL_UP   &kp C_NEXT     &kp C_MUTE
+    &to MAC        &none          &none          &none          &tog GAME          &kp C_PREV     &kp C_VOL_DN   &kp C_VOL_UP   &kp C_NEXT     &kp C_MUTE
     &none          &none          &none          &none          &none              &out OUT_TOG   &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3
                                   &trans         &none          &none              &kp C_STOP     &kp C_PP       &none
             >;
@@ -270,6 +272,28 @@ SIMPLE_MORPH(rpar_gt,           SFT, &kp RPAR,      &kp GT)
     &kp LA(F4)     &kp LA(TAB)    &kp LC(LG(LEFT)) &kp LC(LG(RIGHT)) &none         &kp LEFT       &kp DOWN      &kp UP        &kp RIGHT      &kp CAPS
     &kp LSHIFT     &none          &kp LG(LS(LBRC)) &kp LG(LS(RBRC)) &none          &kp HOME       &kp PG_DN     &kp PG_UP     &kp END        &kp INSERT
                                   &none             &trans            &none          &kp LC(SPACE)  &kp BSPC      &kp DEL
+            >;
+        };
+
+        game {
+            display-name = "GAME";
+            bindings = <
+// ╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮   ╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮
+    &kp Q          &kp W          &kp E          &kp R          &kp T              &kp Y          &kp U          &kp I          &kp O          &kp P
+    &kp A          &kp S          &kp D          &kp F          &sl GAME_PLUS       &kp H          &kp J          &kp K          &kp L          &kp SQT
+    &kp Z          &kp X          &kp C          &kp V          &kp B              &kp N          &kp M          &kp COMMA      &kp DOT        &kp FSLH
+                                  &kp LCTRL      &kp LSHFT      &kp SPACE          &sl GAME_PLUS  &kp RET        &kp ESC
+            >;
+        };
+
+        game_plus {
+            display-name = "GAME+";
+            bindings = <
+// ╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮   ╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮
+    &kp N1         &kp N2         &kp N3         &kp N4         &kp N5             &kp F1         &kp F2         &kp F3         &kp F4         &kp F5
+    &kp N6         &kp N7         &kp N8         &kp N9         &kp G              &kp F6         &kp F7         &kp F8         &kp F9         &kp F10
+    &kp N0         &kp ESC        &kp TAB        &kp F11        &kp F12            &kp LEFT       &kp DOWN       &kp UP         &kp RIGHT      &kp GRAVE
+                                  &trans         &trans         &trans             &trans         &trans         &tog GAME
             >;
         };
 
