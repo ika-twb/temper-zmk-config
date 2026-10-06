@@ -91,6 +91,17 @@ draw_config:
 parse_config:
   assign_combos_to_layers: false
   preprocess: true
+  modifier_fn_map:
+    left_ctrl: '⌃'
+    right_ctrl: '⌃'
+    left_shift: '⇧'
+    right_shift: '⇧'
+    left_alt: '⎇'
+    right_alt: '⎇'
+    left_gui: '◆'
+    right_gui: '◆'
+    keycode_combiner: '{mods}{key}'
+    mod_combiner: '{mod_1}{mod_2}'
   qmk_keycode_map:
     AMPERSAND: '&'
     AMPR: '&'

@@ -181,9 +181,9 @@ layers:
     - ''
     - {type: held}
   MAC_NAV:
-  - ['', '', 'Gui+Sft+{', 'Gui+Sft+}', '', ↞, Ctl+↓, Ctl+↑, ↠, '']
-  - [⌘W, Gui+TAB, Ctl+←, Ctl+→, '', ←, ↓, ↑, →, CAPS]
-  - [LSHIFT, '', 'Gui+Sft+{', 'Gui+Sft+}', '', HOME, PG DN, PG UP, END, INSERT]
+  - ['', '', '◆⇧{', '◆⇧}', '', ↞, ⌃↓, ⌃↑, ↠, '']
+  - [⌘W, ◆TAB, ⌃←, ⌃→, '', ←, ↓, ↑, →, CAPS]
+  - [LSHIFT, '', '◆⇧{', '◆⇧}', '', HOME, PG DN, PG UP, END, INSERT]
   - - ''
     - {type: held}
     - ''
@@ -191,13 +191,13 @@ layers:
     - BSPC
     - DEL
   WIN_NAV:
-  - ['', '', 'Ctl+Sft+{', 'Ctl+Sft+}', '', Ctl+←, Ctl+↓, Ctl+↑, Ctl+→, '']
-  - [Alt+F4, Alt+TAB, Ctl+Gui+←, Ctl+Gui+→, '', ←, ↓, ↑, →, CAPS]
-  - [LSHIFT, '', 'Gui+Sft+{', 'Gui+Sft+}', '', HOME, PG DN, PG UP, END, INSERT]
+  - ['', '', '⌃⇧{', '⌃⇧}', '', ⌃←, ⌃↓, ⌃↑, ⌃→, '']
+  - [⎇F4, ⎇TAB, ⌃◆←, ⌃◆→, '', ←, ↓, ↑, →, CAPS]
+  - [LSHIFT, '', '◆⇧{', '◆⇧}', '', HOME, PG DN, PG UP, END, INSERT]
   - - ''
     - {type: held}
     - ''
-    - Ctl+SPACE
+    - ⌃SPACE
     - BSPC
     - DEL
   GAME:
