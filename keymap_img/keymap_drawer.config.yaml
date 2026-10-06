@@ -168,6 +168,7 @@ parse_config:
   raw_binding_map:
     '&bootloader': 'BOOT'
     '&sys_reset': 'RESET'
+    '&bt BT_CLR': 'BT CLR'
     '&mmv MOVE_LEFT': {t: '←', h: 'pointer', type: arrow}
     '&mmv MOVE_DOWN': {t: '↓', h: 'pointer', type: arrow}
     '&mmv MOVE_UP': {t: '↑', h: 'pointer', type: arrow}
