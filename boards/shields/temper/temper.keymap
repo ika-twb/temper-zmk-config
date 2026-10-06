@@ -112,6 +112,34 @@
 };
 
 /* ── Home Row Mods (HRMs) ────────────────────────────────────────── */
+/* keymap-drawer cannot expand the nested helper macros below. Give it
+ * equivalent parser-only nodes; normal ZMK builds still use the full code. */
+#ifdef KEYMAP_DRAWER
+/ {
+    behaviors {
+        hml: drawer_hml {
+            compatible = "zmk,behavior-hold-tap";
+            bindings = <&kp>, <&kp>;
+        };
+        hmr: drawer_hmr {
+            compatible = "zmk,behavior-hold-tap";
+            bindings = <&kp>, <&kp>;
+        };
+        comma_morph: drawer_comma_morph {
+            compatible = "zmk,behavior-mod-morph";
+            bindings = <&kp COMMA>, <&kp SEMICOLON>;
+        };
+        dot_morph: drawer_dot_morph {
+            compatible = "zmk,behavior-mod-morph";
+            bindings = <&kp DOT>, <&kp COLON>;
+        };
+        qexcl: drawer_qexcl {
+            compatible = "zmk,behavior-mod-morph";
+            bindings = <&kp QMARK>, <&kp EXCL>;
+        };
+    };
+};
+#else
 #define MAKE_HRM(NAME, HOLD, TAP, TRIGGER_POS)                          \
     ZMK_HOLD_TAP(NAME,                                                   \
         bindings = <HOLD>, <TAP>;                                        \
@@ -166,6 +194,7 @@ SIMPLE_MORPH(dot_morph,         SFT, &kp DOT,       &kp COLON)
 SIMPLE_MORPH(qexcl,             SFT, &kp QMARK,     &kp EXCL)
 SIMPLE_MORPH(lpar_lt,           SFT, &kp LPAR,      &kp LT)
 SIMPLE_MORPH(rpar_gt,           SFT, &kp RPAR,      &kp GT)
+#endif
 
 /* ── Keymap ──────────────────────────────────────────────────────── */
 / {
