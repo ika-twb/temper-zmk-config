@@ -317,23 +317,6 @@ parse_config:
     C_VOLUME_UP: "VOL\nUP"
     C_BRIGHTNESS_DEC: '☀↓'
     C_BRIGHTNESS_INC: '☀↑'
-    LA(LEFT): ↞
-    LA(RIGHT): ↠
-    LG(LEFT): ⇤
-    LG(RIGHT): ⇥
-    'LS(LC(LG(LALT)))': 'HYPER'
-    'RS(RC(RG(RALT)))': 'HYPER'
-    'LC(LG(LALT))': 'MEH'
-    'RC(RG(RALT))': 'MEH'
-    'LG(Q)': '⌘Q'
-    'LG(W)': '⌘W'
-    'LG(GRAVE)': '⌘`'
-    'LG(Z)': '⌘Z'
-    'LG(X)': '⌘X'
-    'LG(C)': '⌘C'
-    'LG(V)': '⌘V'
-    'LC(TAB)': '⌃↹'
-    'LS(LC(TAB))': '⌃⇧↹'
 #   zmk_combos:
 #     combo_tog_nav_word: {'a': 'bottom', 'o': -0.25}
 #     combo_tog_num_word: {'a': 'bottom', 'o': 0.0}
