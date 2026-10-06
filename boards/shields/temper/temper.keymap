@@ -84,6 +84,27 @@
 
 #define QUICK_TAP_MS 175
 
+/* Keep the identical HID action visibly OS-specific in the keymap drawing. */
+#ifdef KEYMAP_DRAWER
+/ {
+    behaviors {
+        mac_cmd_brace_l: drawer_mac_cmd_brace_l { compatible = "zmk,behavior-macro"; #binding-cells = <0>; };
+        mac_cmd_brace_r: drawer_mac_cmd_brace_r { compatible = "zmk,behavior-macro"; #binding-cells = <0>; };
+        win_cmd_brace_l: drawer_win_cmd_brace_l { compatible = "zmk,behavior-macro"; #binding-cells = <0>; };
+        win_cmd_brace_r: drawer_win_cmd_brace_r { compatible = "zmk,behavior-macro"; #binding-cells = <0>; };
+    };
+};
+#define MAC_CMD_BRACE_L &mac_cmd_brace_l
+#define MAC_CMD_BRACE_R &mac_cmd_brace_r
+#define WIN_CMD_BRACE_L &win_cmd_brace_l
+#define WIN_CMD_BRACE_R &win_cmd_brace_r
+#else
+#define MAC_CMD_BRACE_L &kp LG(LS(LBRC))
+#define MAC_CMD_BRACE_R &kp LG(LS(RBRC))
+#define WIN_CMD_BRACE_L &kp LG(LS(LBRC))
+#define WIN_CMD_BRACE_R &kp LG(LS(RBRC))
+#endif
+
 /* ── Mouse pointer timing ────────────────────────────────────────── */
 &msc {
     acceleration-exponent = <1>;
@@ -285,9 +306,9 @@ SIMPLE_MORPH(rpar_gt,           SFT, &kp RPAR,      &kp GT)
             display-name = "MAC_NAV";
             bindings = <
 // ╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮   ╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮
-    &none          &none          &kp LG(LS(LBRC)) &kp LG(LS(RBRC)) &none          &kp LA(LEFT)   &kp LC(DOWN)  &kp LC(UP)    &kp LA(RIGHT)  &none
+    &none          &none          MAC_CMD_BRACE_L   MAC_CMD_BRACE_R   &none          &kp LA(LEFT)   &kp LC(DOWN)  &kp LC(UP)    &kp LA(RIGHT)  &none
     &kp LG(W)      &kp LG(TAB)    &kp LC(LEFT)     &kp LC(RIGHT)    &none          &kp LEFT       &kp DOWN      &kp UP        &kp RIGHT      &kp CAPS
-    &kp LSHIFT     &none          &kp LG(LS(LBRC)) &kp LG(LS(RBRC)) &none          &kp HOME       &kp PG_DN     &kp PG_UP     &kp END        &kp INSERT
+    &kp LSHIFT     &none          MAC_CMD_BRACE_L   MAC_CMD_BRACE_R   &none          &kp HOME       &kp PG_DN     &kp PG_UP     &kp END        &kp INSERT
                                   &none             &trans            &none          &kp CAPS       &kp BSPC      &kp DEL
             >;
         };
@@ -298,7 +319,7 @@ SIMPLE_MORPH(rpar_gt,           SFT, &kp RPAR,      &kp GT)
 // ╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮   ╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮
     &none          &none          &kp LC(LS(LBRC)) &kp LC(LS(RBRC)) &none          &kp LC(LEFT)   &kp LC(DOWN)  &kp LC(UP)    &kp LC(RIGHT)  &none
     &kp LA(F4)     &kp LA(TAB)    &kp LC(LG(LEFT)) &kp LC(LG(RIGHT)) &none         &kp LEFT       &kp DOWN      &kp UP        &kp RIGHT      &kp CAPS
-    &kp LSHIFT     &none          &kp LG(LS(LBRC)) &kp LG(LS(RBRC)) &none          &kp HOME       &kp PG_DN     &kp PG_UP     &kp END        &kp INSERT
+    &kp LSHIFT     &none          WIN_CMD_BRACE_L   WIN_CMD_BRACE_R   &none          &kp HOME       &kp PG_DN     &kp PG_UP     &kp END        &kp INSERT
                                   &none             &trans            &none          &kp LC(SPACE)  &kp BSPC      &kp DEL
             >;
         };

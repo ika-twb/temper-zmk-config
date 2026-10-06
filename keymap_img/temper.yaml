@@ -181,9 +181,9 @@ layers:
     - ''
     - {type: held}
   MAC_NAV:
-  - ['', '', 'Gui+Sft+{', 'Gui+Sft+}', '', 'Alt+←', Ctl+↓, Ctl+↑, 'Alt+→', '']
-  - [Gui+W, Gui+TAB, Ctl+←, Ctl+→, '', ←, ↓, ↑, →, CAPS]
-  - [LSHIFT, '', 'Gui+Sft+{', 'Gui+Sft+}', '', HOME, PG DN, PG UP, END, INSERT]
+  - ['', '', 'Cmd+Sft+{', 'Cmd+Sft+}', '', 'Alt+←', Ctl+↓, Ctl+↑, 'Alt+→', '']
+  - [Cmd+W, Cmd+TAB, Ctl+←, Ctl+→, '', ←, ↓, ↑, →, CAPS]
+  - [LSHIFT, '', 'Cmd+Sft+{', 'Cmd+Sft+}', '', HOME, PG DN, PG UP, END, INSERT]
   - - ''
     - {type: held}
     - ''
@@ -192,8 +192,8 @@ layers:
     - DEL
   WIN_NAV:
   - ['', '', 'Ctl+Sft+{', 'Ctl+Sft+}', '', Ctl+←, Ctl+↓, Ctl+↑, Ctl+→, '']
-  - [Alt+F4, Alt+TAB, Ctl+Gui+←, Ctl+Gui+→, '', ←, ↓, ↑, →, CAPS]
-  - [LSHIFT, '', 'Gui+Sft+{', 'Gui+Sft+}', '', HOME, PG DN, PG UP, END, INSERT]
+  - [Alt+F4, Alt+TAB, Ctl+Win+←, Ctl+Win+→, '', ←, ↓, ↑, →, CAPS]
+  - [LSHIFT, '', 'Win+Sft+{', 'Win+Sft+}', '', HOME, PG DN, PG UP, END, INSERT]
   - - ''
     - {type: held}
     - ''

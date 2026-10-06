@@ -164,6 +164,14 @@ parse_config:
     '&bootloader': 'BOOT'
     '&sys_reset': 'RESET'
     '&bt BT_CLR': 'BT CLR'
+    '&kp LG(W)': 'Cmd+W'
+    '&kp LG(TAB)': 'Cmd+TAB'
+    '&mac_cmd_brace_l': 'Cmd+Sft+{'
+    '&mac_cmd_brace_r': 'Cmd+Sft+}'
+    '&win_cmd_brace_l': 'Win+Sft+{'
+    '&win_cmd_brace_r': 'Win+Sft+}'
+    '&kp LC(LG(LEFT))': 'Ctl+Win+←'
+    '&kp LC(LG(RIGHT))': 'Ctl+Win+→'
     '&mmv MOVE_LEFT': {t: '←', h: 'pointer'}
     '&mmv MOVE_DOWN': {t: '↓', h: 'pointer'}
     '&mmv MOVE_UP': {t: '↑', h: 'pointer'}
