@@ -22,4 +22,4 @@ jobs:
       config_path: "keymap_img/keymap_drawer.config.yaml"  # config file, ignored if it does not exist
       output_folder: "keymap_img"                          # path to save produced SVG and keymap YAML files
       parse_args: "temper:'-c 10'"                         # map of extra args to pass to `keymap parse`, e.g. "corne:'-l Def Lwr Rse' cradio:''"
-      draw_args: "temper:'-k chocofi'"                      # draw every current layer
+      draw_args: "temper:'keymap_img/combos.yaml -k chocofi -s MAC WIN COMBOS MOUSE MEDIA NUM SYM FUNC \"MAC NAV\" \"WIN NAV\" GAME GAME+'"

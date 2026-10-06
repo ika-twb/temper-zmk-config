@@ -2,16 +2,16 @@ layout: {zmk_keyboard: temper}
 layers:
   MAC:
   - [Q, W, E, R, T, Y, U, I, O, P]
-  - - {t: A, h: CTL}
-    - {t: S, h: ALT}
-    - {t: D, h: GUI}
-    - {t: F, h: SFT}
+  - - {t: A, h: LCTRL}
+    - {t: S, h: LALT}
+    - {t: D, h: LCMD}
+    - {t: F, h: LSHFT}
     - G
     - H
-    - {t: J, h: SFT}
-    - {t: K, h: GUI}
-    - {t: L, h: ALT}
-    - {t: '''', h: CTL}
+    - {t: J, h: LSHFT}
+    - {t: K, h: LCMD}
+    - {t: L, h: LALT}
+    - {t: '''', h: LCTRL}
   - - Z
     - X
     - C
@@ -24,22 +24,22 @@ layers:
     - {t: '?', s: '!'}
   - - {t: ESC, h: MEDIA}
     - {t: TAB, h: MAC NAV}
-    - {t: SPC, h: MOUSE}
-    - {t: BSP, h: SYM}
+    - {t: SPACE, h: MOUSE}
+    - {t: BSPC, h: SYM}
     - {t: RET, h: NUM}
     - {t: DEL, h: FUNC}
   WIN:
   - [Q, W, E, R, T, Y, U, I, O, P]
-  - - {t: A, h: GUI}
-    - {t: S, h: ALT}
-    - {t: D, h: CTL}
-    - {t: F, h: SFT}
+  - - {t: A, h: LGUI}
+    - {t: S, h: LALT}
+    - {t: D, h: LCTRL}
+    - {t: F, h: LSHFT}
     - G
     - H
-    - {t: J, h: SFT}
-    - {t: K, h: CTL}
-    - {t: L, h: ALT}
-    - {t: '''', h: GUI}
+    - {t: J, h: LSHFT}
+    - {t: K, h: LCTRL}
+    - {t: L, h: LALT}
+    - {t: '''', h: LGUI}
   - - Z
     - X
     - C
@@ -52,8 +52,8 @@ layers:
     - {t: '?', s: '!'}
   - - {t: ESC, h: MEDIA}
     - {t: TAB, h: WIN NAV}
-    - {t: SPC, h: MOUSE}
-    - {t: BSP, h: SYM}
+    - {t: SPACE, h: MOUSE}
+    - {t: BSPC, h: SYM}
     - {t: RET, h: NUM}
     - {t: DEL, h: FUNC}
   MOUSE:
@@ -206,7 +206,7 @@ layers:
     - {type: held}
     - ''
     - CAPS
-    - BSP
+    - BSPC
     - DEL
   WIN NAV:
   - - ''
@@ -233,8 +233,8 @@ layers:
   - - ''
     - {type: held}
     - ''
-    - Ctl+SPC
-    - BSP
+    - Ctl+SPACE
+    - BSPC
     - DEL
   GAME:
   - [Q, W, E, R, T, Y, U, I, O, P]
@@ -258,9 +258,9 @@ layers:
     - {t: ',', s: <}
     - {t: ., s: '>'}
     - /
-  - - CTL
-    - SFT
-    - SPC
+  - - LCTRL
+    - LSHFT
+    - SPACE
     - {t: GAME+, h: sticky}
     - RET
     - ESC

@@ -219,7 +219,7 @@ SIMPLE_MORPH(rpar_gt,           SFT, &kp RPAR,      &kp GT)
             bindings = <
 // ╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮   ╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮
     &kp Q          &kp W          &kp E          &kp R          &kp T              &kp Y          &kp U          &kp I          &kp O          &kp P
-    &hml LCMD A    &hml LALT S    &hml LCTRL D   &hml LSHFT F   &kp G              &kp H          &hmr LSHFT J   &hmr LCTRL K   &hmr LALT L    &hmr LCMD SQT
+    &hml LGUI A    &hml LALT S    &hml LCTRL D   &hml LSHFT F   &kp G              &kp H          &hmr LSHFT J   &hmr LCTRL K   &hmr LALT L    &hmr LGUI SQT
     &kp Z          &kp X          &kp C          &kp V          &kp B              &kp N          &kp M          &comma_morph   &dot_morph     &qexcl
 // ╰──────────────┴──────────────┼──────────────┼──────────────┼──────────────╯   ╰──────────────┼──────────────┼──────────────┼──────────────┴──────────────╯
                                   &lt MEDIA ESC  &lt WIN_NAV TAB &lt MOUSE SPACE      &lt SYM BSPC   &lt NUM RET    &lt FUNC DEL

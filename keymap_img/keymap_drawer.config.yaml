@@ -165,7 +165,7 @@ parse_config:
     TRNS: ''
     UNDERSCORE: _
     UNDS: _
-    SPACE: SPC
+    SPACE: SPACE
   raw_binding_map:
     '&bootloader': 'BOOT'
     '&sys_reset': 'RESET'
@@ -282,24 +282,24 @@ parse_config:
     TILDE2: '~'
     UNDER: _
     UNDERSCORE: _
-    LCTRL: CTL
-    LALT: ALT
-    LGUI: GUI
-    LCMD: GUI
-    LSHFT: SFT
-    RCTRL: CTL
-    LEFT_CONTROL: CTL
-    LEFT_ALT: ALT
-    LEFT_GUI: GUI
-    LEFT_SHFT: SFT
-    RALT: ALT
-    RGUI: GUI
-    RCMD: GUI
-    RSHFT: SFT
-    RIGHT_CONTROL: CTL
-    RIGHT_ALT: ALT
-    RIGHT_GUI: GUI
-    RIGHT_SHFT: SFT
+    LCTRL: LCTRL
+    LALT: LALT
+    LGUI: LGUI
+    LCMD: LCMD
+    LSHFT: LSHFT
+    RCTRL: RCTRL
+    LEFT_CONTROL: LCTRL
+    LEFT_ALT: LALT
+    LEFT_GUI: LGUI
+    LEFT_SHFT: LSHFT
+    RALT: RALT
+    RGUI: RGUI
+    RCMD: RCMD
+    RSHFT: RSHFT
+    RIGHT_CONTROL: RCTRL
+    RIGHT_ALT: RALT
+    RIGHT_GUI: RGUI
+    RIGHT_SHFT: RSHFT
     LEFT: {t: '←', type: arrow}
     RIGHT: {t: '→', type: arrow}
     UP: {t: '↑', type: arrow}
@@ -309,9 +309,9 @@ parse_config:
     RETURN: RET
     RET: RET
     ESCAPE: ESC
-    SPACE: SPC
-    BSPC: BSP
-    BACKSPACE: BSP
+    SPACE: SPACE
+    BSPC: BSPC
+    BACKSPACE: BSPC
     DEL: DEL
     DELETE: DEL
     C_REWIND: '⏮'
