@@ -77,6 +77,12 @@ draw_config:
         dominant-baseline: hanging;
     }
 
+    /* Keep directional arrows as symbols, but make them easier to scan. */
+    text.arrow {
+        font-size: 15px;
+        font-weight: bold;
+    }
+
     /* styling for hold/shifted label text in combo box */
     text.combo.hold, text.combo.shifted {
         font-size: 7px;
@@ -159,18 +165,18 @@ parse_config:
     TRNS: ''
     UNDERSCORE: _
     UNDS: _
-    SPACE: ⎵
+    SPACE: SPC
   raw_binding_map:
     '&bootloader': 'BOOT'
     '&sys_reset': 'RESET'
-    '&mmv MOVE_LEFT': {t: '←', h: 'pointer'}
-    '&mmv MOVE_DOWN': {t: '↓', h: 'pointer'}
-    '&mmv MOVE_UP': {t: '↑', h: 'pointer'}
-    '&mmv MOVE_RIGHT': {t: '→', h: 'pointer'}
-    '&msc SCRL_LEFT': {t: '←', h: 'scroll'}
-    '&msc SCRL_DOWN': {t: '↓', h: 'scroll'}
-    '&msc SCRL_UP': {t: '↑', h: 'scroll'}
-    '&msc SCRL_RIGHT': {t: '→', h: 'scroll'}
+    '&mmv MOVE_LEFT': {t: '←', h: 'pointer', type: arrow}
+    '&mmv MOVE_DOWN': {t: '↓', h: 'pointer', type: arrow}
+    '&mmv MOVE_UP': {t: '↑', h: 'pointer', type: arrow}
+    '&mmv MOVE_RIGHT': {t: '→', h: 'pointer', type: arrow}
+    '&msc SCRL_LEFT': {t: '←', h: 'scroll', type: arrow}
+    '&msc SCRL_DOWN': {t: '↓', h: 'scroll', type: arrow}
+    '&msc SCRL_UP': {t: '↑', h: 'scroll', type: arrow}
+    '&msc SCRL_RIGHT': {t: '→', h: 'scroll', type: arrow}
     '&mkp LCLK': {t: 'L', h: 'click'}
     '&mkp RCLK': {t: 'R', h: 'click'}
     '&mkp MCLK': {t: 'M', h: 'click'}
@@ -276,38 +282,38 @@ parse_config:
     TILDE2: '~'
     UNDER: _
     UNDERSCORE: _
-    LCTRL: ⌃
-    LALT: ⎇
-    LGUI: ◆
-    LCMD: ◆
-    LSHFT: ⇧
-    RCTRL: ⌃
-    LEFT_CONTROL: ⌃
-    LEFT_ALT: ⎇
-    LEFT_GUI: ⌘
-    LEFT_SHFT: ⇧
-    RALT: ⎇
-    RGUI: ◆
-    RCMD: ◆
-    RSHFT: ⇧
-    RIGHT_CONTROL: ⌃
-    RIGHT_ALT: ⎇
-    RIGHT_GUI: ⌘
-    RIGHT_SHFT: ⇧
-    LEFT: ←
-    RIGHT: →
-    UP: ↑
-    DOWN: ↓
-    TAB: ↹
-    ESC: '⎋'
-    RETURN: '⏎'
-    RET: '⏎'
-    ESCAPE: '⎋'
-    SPACE: '⎵'
-    BSPC: '⌫'
-    BACKSPACE: '⌫'
-    DEL: '⌦'
-    DELETE: '⌦'
+    LCTRL: CTL
+    LALT: ALT
+    LGUI: GUI
+    LCMD: GUI
+    LSHFT: SFT
+    RCTRL: CTL
+    LEFT_CONTROL: CTL
+    LEFT_ALT: ALT
+    LEFT_GUI: GUI
+    LEFT_SHFT: SFT
+    RALT: ALT
+    RGUI: GUI
+    RCMD: GUI
+    RSHFT: SFT
+    RIGHT_CONTROL: CTL
+    RIGHT_ALT: ALT
+    RIGHT_GUI: GUI
+    RIGHT_SHFT: SFT
+    LEFT: {t: '←', type: arrow}
+    RIGHT: {t: '→', type: arrow}
+    UP: {t: '↑', type: arrow}
+    DOWN: {t: '↓', type: arrow}
+    TAB: TAB
+    ESC: ESC
+    RETURN: RET
+    RET: RET
+    ESCAPE: ESC
+    SPACE: SPC
+    BSPC: BSP
+    BACKSPACE: BSP
+    DEL: DEL
+    DELETE: DEL
     C_REWIND: '⏮'
     C_FAST_FORWARD: '⏭'
     C_PAUSE: '⏯'

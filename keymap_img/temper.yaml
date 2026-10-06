@@ -2,16 +2,16 @@ layout: {zmk_keyboard: temper}
 layers:
   MAC:
   - [Q, W, E, R, T, Y, U, I, O, P]
-  - - {t: A, h: ⌃}
-    - {t: S, h: ⎇}
-    - {t: D, h: ◆}
-    - {t: F, h: ⇧}
+  - - {t: A, h: CTL}
+    - {t: S, h: ALT}
+    - {t: D, h: GUI}
+    - {t: F, h: SFT}
     - G
     - H
-    - {t: J, h: ⇧}
-    - {t: K, h: ◆}
-    - {t: L, h: ⎇}
-    - {t: '''', h: ⌃}
+    - {t: J, h: SFT}
+    - {t: K, h: GUI}
+    - {t: L, h: ALT}
+    - {t: '''', h: CTL}
   - - Z
     - X
     - C
@@ -22,24 +22,24 @@ layers:
     - {t: ',', s: ;}
     - {t: ., s: ':'}
     - {t: '?', s: '!'}
-  - - {t: ⎋, h: MEDIA}
-    - {t: ↹, h: MAC NAV}
-    - {t: ⎵, h: MOUSE}
-    - {t: ⌫, h: SYM}
-    - {t: ⏎, h: NUM}
-    - {t: ⌦, h: FUNC}
+  - - {t: ESC, h: MEDIA}
+    - {t: TAB, h: MAC NAV}
+    - {t: SPC, h: MOUSE}
+    - {t: BSP, h: SYM}
+    - {t: RET, h: NUM}
+    - {t: DEL, h: FUNC}
   WIN:
   - [Q, W, E, R, T, Y, U, I, O, P]
-  - - {t: A, h: ◆}
-    - {t: S, h: ⎇}
-    - {t: D, h: ⌃}
-    - {t: F, h: ⇧}
+  - - {t: A, h: GUI}
+    - {t: S, h: ALT}
+    - {t: D, h: CTL}
+    - {t: F, h: SFT}
     - G
     - H
-    - {t: J, h: ⇧}
-    - {t: K, h: ⌃}
-    - {t: L, h: ⎇}
-    - {t: '''', h: ◆}
+    - {t: J, h: SFT}
+    - {t: K, h: CTL}
+    - {t: L, h: ALT}
+    - {t: '''', h: GUI}
   - - Z
     - X
     - C
@@ -50,12 +50,12 @@ layers:
     - {t: ',', s: ;}
     - {t: ., s: ':'}
     - {t: '?', s: '!'}
-  - - {t: ⎋, h: MEDIA}
-    - {t: ↹, h: WIN NAV}
-    - {t: ⎵, h: MOUSE}
-    - {t: ⌫, h: SYM}
-    - {t: ⏎, h: NUM}
-    - {t: ⌦, h: FUNC}
+  - - {t: ESC, h: MEDIA}
+    - {t: TAB, h: WIN NAV}
+    - {t: SPC, h: MOUSE}
+    - {t: BSP, h: SYM}
+    - {t: RET, h: NUM}
+    - {t: DEL, h: FUNC}
   MOUSE:
   - ['', '', '', '', '', REDO, PASTE, COPY, CUT, UNDO]
   - - ''
@@ -63,20 +63,20 @@ layers:
     - ''
     - ''
     - ''
-    - {t: ←, h: pointer}
-    - {t: ↓, h: pointer}
-    - {t: ↑, h: pointer}
-    - {t: →, h: pointer}
+    - {t: ←, h: pointer, type: arrow}
+    - {t: ↓, h: pointer, type: arrow}
+    - {t: ↑, h: pointer, type: arrow}
+    - {t: →, h: pointer, type: arrow}
     - ''
   - - ''
     - ''
     - ''
     - ''
     - ''
-    - {t: ←, h: scroll}
-    - {t: ↓, h: scroll}
-    - {t: ↑, h: scroll}
-    - {t: →, h: scroll}
+    - {t: ←, h: scroll, type: arrow}
+    - {t: ↓, h: scroll, type: arrow}
+    - {t: ↑, h: scroll, type: arrow}
+    - {t: →, h: scroll, type: arrow}
     - ''
   - - ''
     - ''
@@ -181,25 +181,61 @@ layers:
     - ''
     - {type: held}
   MAC NAV:
-  - ['', '', 'Gui+Sft+{', 'Gui+Sft+}', '', ↞, Ctl+↓, Ctl+↑, ↠, '']
-  - [⌘W, Gui+↹, Ctl+←, Ctl+→, '', ←, ↓, ↑, →, CAPS]
+  - - ''
+    - ''
+    - Gui+Sft+{
+    - Gui+Sft+}
+    - ''
+    - ↞
+    - {t: Ctl+↓, type: arrow}
+    - {t: Ctl+↑, type: arrow}
+    - ↠
+    - ''
+  - - ⌘W
+    - Gui+TAB
+    - {t: Ctl+←, type: arrow}
+    - {t: Ctl+→, type: arrow}
+    - ''
+    - {t: ←, type: arrow}
+    - {t: ↓, type: arrow}
+    - {t: ↑, type: arrow}
+    - {t: →, type: arrow}
+    - CAPS
   - [LSHIFT, '', 'Gui+Sft+{', 'Gui+Sft+}', '', HOME, PG DN, PG UP, END, INSERT]
   - - ''
     - {type: held}
     - ''
     - CAPS
-    - ⌫
-    - ⌦
+    - BSP
+    - DEL
   WIN NAV:
-  - ['', '', 'Ctl+Sft+{', 'Ctl+Sft+}', '', Ctl+←, Ctl+↓, Ctl+↑, Ctl+→, '']
-  - [Alt+F4, Alt+↹, Ctl+Gui+←, Ctl+Gui+→, '', ←, ↓, ↑, →, CAPS]
+  - - ''
+    - ''
+    - Ctl+Sft+{
+    - Ctl+Sft+}
+    - ''
+    - {t: Ctl+←, type: arrow}
+    - {t: Ctl+↓, type: arrow}
+    - {t: Ctl+↑, type: arrow}
+    - {t: Ctl+→, type: arrow}
+    - ''
+  - - Alt+F4
+    - Alt+TAB
+    - {t: Ctl+Gui+←, type: arrow}
+    - {t: Ctl+Gui+→, type: arrow}
+    - ''
+    - {t: ←, type: arrow}
+    - {t: ↓, type: arrow}
+    - {t: ↑, type: arrow}
+    - {t: →, type: arrow}
+    - CAPS
   - [LSHIFT, '', 'Gui+Sft+{', 'Gui+Sft+}', '', HOME, PG DN, PG UP, END, INSERT]
   - - ''
     - {type: held}
     - ''
-    - Ctl+⎵
-    - ⌫
-    - ⌦
+    - Ctl+SPC
+    - BSP
+    - DEL
   GAME:
   - [Q, W, E, R, T, Y, U, I, O, P]
   - - A
@@ -222,12 +258,12 @@ layers:
     - {t: ',', s: <}
     - {t: ., s: '>'}
     - /
-  - - ⌃
-    - ⇧
-    - ⎵
+  - - CTL
+    - SFT
+    - SPC
     - {t: GAME+, h: sticky}
-    - ⏎
-    - ⎋
+    - RET
+    - ESC
   GAME+:
   - ['1', '2', '3', '4', '5', F1, F2, F3, F4, F5]
   - - '6'
@@ -241,14 +277,14 @@ layers:
     - F9
     - F10
   - - '0'
-    - ⎋
-    - ↹
+    - ESC
+    - TAB
     - F11
     - F12
-    - ←
-    - ↓
-    - ↑
-    - →
+    - {t: ←, type: arrow}
+    - {t: ↓, type: arrow}
+    - {t: ↑, type: arrow}
+    - {t: →, type: arrow}
     - {t: '`', s: '~'}
   - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
