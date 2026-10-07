@@ -21,12 +21,12 @@ one-shot `GAME+`, and `Space`, while the inner right thumb provides `Alt`. All
 movement and action keys are plain keys without hold-tap delays, and the
 physical `G` position remains a normal `G`.
 
-`GAME+` puts weapon slots `1`-`5` across the top-left row and `6`-`0` across
-the home row. Its arrows occupy the same middle-right positions as the
-navigation layers; F-keys fill the top- and bottom-right rows, with Escape,
-Tab, console, F11, and F12 on the bottom-left. Press the `GAME+` thumb, then
-the rightmost `Esc` thumb, to leave gaming mode and return to whichever macOS
-or Windows profile was active.
+`GAME+` forms a normal `1`-through-`0` number row across both halves. The
+left home row prioritizes console, classic view/automap zoom, quicksave (`F6`),
+and quickload (`F9`); the remaining function keys occupy the bottom row. Its
+arrows use the same middle-right positions as the navigation layers. Press the
+`GAME+` thumb, then the rightmost `Esc` thumb, to leave gaming mode and return
+to whichever macOS or Windows profile was active.
 
 Four-key safety chords: `Q+P+Z+?` powers off; `T+Y+B+N` enters the bootloader.
 
