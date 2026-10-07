@@ -181,7 +181,7 @@ layers:
     - ''
     - {type: held}
   MAC_NAV:
-  - ['', '', 'Cmd+Sft+{', 'Cmd+Sft+}', '', 'Alt+←', Ctl+↓, Ctl+↑, 'Alt+→', '']
+  - ['', '', 'Cmd+Sft+{', 'Cmd+Sft+}', '', Alt+←, Ctl+↓, Ctl+↑, Alt+→, '']
   - [Cmd+W, Cmd+TAB, Ctl+←, Ctl+→, '', ←, ↓, ↑, →, CAPS]
   - [LSHIFT, '', 'Cmd+Sft+{', 'Cmd+Sft+}', '', HOME, PG DN, PG UP, END, INSERT]
   - - ''
