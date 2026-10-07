@@ -14,10 +14,12 @@ My 36-key [Temper](https://github.com/raeedcho/temper) layout, inspired by
 
 ## Gaming layers
 
-`GAME` keeps the movement and action keys free of hold-tap behavior. The three
-left thumbs are dedicated `Ctrl`, `Shift`, and `Space`, so crouch, sprint, and
-jump never wait on hold-tap resolution. The physical `G` key activates `GAME+`
-for one keypress; the inner right thumb provides the same one-shot layer.
+`GAME` shifts the typing layout one physical column to the right, placing
+`W/A/S/D` on the more comfortable physical `E/S/D/F` positions. The physical
+`Q/A/Z` column becomes `Tab`, `Shift`, and `Ctrl`; the left thumbs provide `F`,
+`Alt`, and `Space`. All of these are plain keys without hold-tap delays. The
+physical `G` key activates `GAME+` for one keypress; the inner right thumb
+provides the same one-shot layer.
 
 `GAME+` puts weapon slots `1`-`5` across the top-left row, followed by `6`-`9`
 on the home row and `0` below. It also provides F-keys, arrows, console, Tab,

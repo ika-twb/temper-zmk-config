@@ -201,18 +201,19 @@ layers:
     - BSPC
     - DEL
   GAME:
-  - [Q, W, E, R, T, Y, U, I, O, P]
-  - - A
+  - [TAB, Q, W, E, R, T, Y, U, I, O]
+  - - LSHIFT
+    - A
     - S
     - D
-    - F
     - {t: GAME+, h: sticky}
+    - F
+    - G
     - H
     - J
     - K
-    - L
-    - ''''
-  - - Z
+  - - LCTRL
+    - Z
     - X
     - C
     - V
@@ -221,9 +222,8 @@ layers:
     - M
     - {t: ',', s: <}
     - {t: ., s: '>'}
-    - /
-  - - LCTRL
-    - LSHFT
+  - - F
+    - LALT
     - SPACE
     - {t: GAME+, h: sticky}
     - RET
