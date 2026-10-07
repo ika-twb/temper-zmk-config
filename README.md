@@ -17,15 +17,16 @@ My 36-key [Temper](https://github.com/raeedcho/temper) layout, inspired by
 `GAME` shifts the typing layout one physical column to the right, placing
 `W/A/S/D` on the more comfortable physical `E/S/D/F` positions. The physical
 `Q/A/Z` column becomes `Tab`, `Shift`, and `Ctrl`; the left thumbs provide `F`,
-`Alt`, and `Space`. All of these are plain keys without hold-tap delays. The
-physical `G` key activates `GAME+` for one keypress; the inner right thumb
-provides the same one-shot layer.
+one-shot `GAME+`, and `Space`, while the inner right thumb provides `Alt`. All
+movement and action keys are plain keys without hold-tap delays, and the
+physical `G` position remains a normal `G`.
 
-`GAME+` puts weapon slots `1`-`5` across the top-left row, followed by `6`-`9`
-on the home row and `0` below. It also provides F-keys, arrows, console, Tab,
-and Escape. Double-tap `G` emits a literal `G`. Press `G`, then the
-rightmost `Esc` thumb, to leave gaming mode and return to whichever macOS or
-Windows profile was active.
+`GAME+` puts weapon slots `1`-`5` across the top-left row and `6`-`0` across
+the home row. Its arrows occupy the same middle-right positions as the
+navigation layers; F-keys fill the top- and bottom-right rows, with Escape,
+Tab, console, F11, and F12 on the bottom-left. Press the `GAME+` thumb, then
+the rightmost `Esc` thumb, to leave gaming mode and return to whichever macOS
+or Windows profile was active.
 
 Four-key safety chords: `Q+P+Z+?` powers off; `T+Y+B+N` enters the bootloader.
 

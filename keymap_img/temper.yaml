@@ -202,16 +202,7 @@ layers:
     - DEL
   GAME:
   - [TAB, Q, W, E, R, T, Y, U, I, O]
-  - - LSHIFT
-    - A
-    - S
-    - D
-    - {t: GAME+, h: sticky}
-    - F
-    - G
-    - H
-    - J
-    - K
+  - [LSHIFT, A, S, D, G, F, G, H, J, K]
   - - LCTRL
     - Z
     - X
@@ -223,35 +214,26 @@ layers:
     - {t: ',', s: <}
     - {t: ., s: '>'}
   - - F
-    - LALT
-    - SPACE
     - {t: GAME+, h: sticky}
+    - SPACE
+    - LALT
     - RET
     - ESC
   GAME+:
   - ['1', '2', '3', '4', '5', F1, F2, F3, F4, F5]
-  - - '6'
-    - '7'
-    - '8'
-    - '9'
-    - {t: G, type: held}
+  - ['6', '7', '8', '9', '0', ←, ↓, ↑, →, '']
+  - - ESC
+    - TAB
+    - {t: '`', s: '~'}
+    - F11
+    - F12
     - F6
     - F7
     - F8
     - F9
     - F10
-  - - '0'
-    - ESC
-    - TAB
-    - F11
-    - F12
-    - ←
-    - ↓
-    - ↑
-    - →
-    - {t: '`', s: '~'}
   - - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
+    - {type: held}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
