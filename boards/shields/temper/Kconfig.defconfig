@@ -6,6 +6,13 @@ config ZMK_KEYBOARD_NAME
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
+# Five host profiles plus the connection to the right split half.
+config BT_MAX_CONN
+    default 6
+
+config BT_MAX_PAIRED
+    default 6
+
 endif
 
 if SHIELD_TEMPER_LEFT || SHIELD_TEMPER_RIGHT
